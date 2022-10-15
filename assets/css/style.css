@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+:root {
+    --color-main: hsl(140, 73%, 42%);
+    --color-alt: hsl(140, 71%, 38%);
+    --color-title: hsl(0, 1%, 14%);
+    --color-text: hsl(0, 0%, 55%);
+    --color-body: hsl(60, 0%, 99%);
+    --color-white: #fff;
+
+    --font-main: "Montserrat", sans-serif;
+
+    --font-h2: 1.25rem;
+    --font-h3: 1rem;
+    --font-normal: 0.938rem;
+    --font-small: 0.813rem;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --font-h2: 1.5rem;
+        --font-h3: 1.25rem;
+        --font-normal: 1rem;
+        --font-small: 0.875rem;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: var(--font-normal);
+    color: var(--color-text);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+button,
+input,
+textarea {
+    outline: none !important;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/**---------- Base ----------**/
+.sing-container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: var(--color-body);
+}
+
+.sing {
+    width: 100%;
+    background: var(--color-white);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    height: 100%;
+    width: 100%;
+    background: var(--color-white);
+    padding: 2.5rem;
+}
+
+.sing-title {
+    font-size: var(--font-h2);
+    color: var(--color-title);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.sing-desc a {
+    color: var(--color-main);
+}
+
+.sing-boxes {
+    margin-top: 2rem;
+}
+
+.form-box {
+    display: flex;
+    align-items: center;
+    height: 3.125rem;
+    width: 100%;
+    margin: 0.6rem 0;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-box .form-input {
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+    background: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    font-size: var(--font-normal);
+    transition: all 0.3s ease;
+}
+
+.form-box .form-input:focus {
+    border-color: var(--color-main);
+}
+
+.form-box i {
+    position: absolute;
+    color: var(--color-main);
+    font-size: 1.2rem;
+}
+
+.button {
+    border-radius: 4px;
+    font-size: var(--font-normal);
+    font-weight: 500;
+    margin-top: 1rem;
+    background: var(--color-main);
+    color: #fff;
+    padding: 1rem 2rem;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: var(--color-alt);
+}
+
+.bg-image {
+    background: url("https://technext.github.io/goind/images/img-1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-item {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.home-data img {
+    margin-bottom: 2rem;
+}
+
+.home-data h3 {
+    margin-bottom: 1rem;
+    font-size: var(--font-h2);
+    font-weight: 600;
+    color: var(--color-main);
+}
+
+.home-data .home-desc {
+    margin-bottom: 2rem;
+}
+
+.home-data .home-btn:hover {
+    color: #fff;
+}
+
+.home-delete {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    color: var(--color-text);
+}
+
+.home-delete:hover {
+    color: var(--color-main);
+}
